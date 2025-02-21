@@ -225,19 +225,35 @@ body {
 }
 
 @media (max-width: 768px) {
-  .banner-section {
-    height: 80vh;
+   .banner-section {
+    height: 30vh;
+    background-position: top;
   }
+
+  .banner2-section {
+    height: 30vh;
+    background-position: top;
+    
+  }
+
+  /* Previously commented-out code */
+  /* .banner-section {
+    height: 80vh;
+  } */
+
   .banner-heading {
     font-size: 30px;
   }
+
   .banner-subtitle {
     font-size: 16px;
   }
+
   .banner-bold {
     font-size: 14px;
   }
 }
+
 
 /* General Styling */
 .about-section {
@@ -288,6 +304,7 @@ body {
   width: 25%;
   height: 300px;
 }
+
 
 .third-image-wrapper {
   width: 32%;

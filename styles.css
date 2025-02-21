@@ -271,6 +271,13 @@ hr.solid {
     padding: 20px;
     margin-top: 100px; 
 }
+@media (max-width: 768px) {
+    .hero {
+        height: 30vh !important; /* Reduce height on mobile */
+        background-position: top; /* Show the upper half of the image */
+    }
+}
+
 
 .hero h1 {
     font-family: 'Argent', sans-serif;
