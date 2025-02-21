@@ -226,12 +226,12 @@ body {
 
 @media (max-width: 768px) {
    .banner-section {
-    height: 30vh;
+    height: 50vh;
     background-position: top;
   }
 
   .banner2-section {
-    height: 30vh;
+    height: 50vh;
     background-position: top;
     
   }
