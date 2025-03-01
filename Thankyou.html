@@ -73,13 +73,16 @@
             </a>
             <!-- Toggle Button -->
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <i class="bi bi-list text-white fs-2"></i>
             </button>
             <!-- Offcanvas Menu -->
             <div class="offcanvas offcanvas-end" id="offcanvasNavbar">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title">Menu</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" style="width: 40px; height: 40px; background: transparent; border: none; display: flex; align-items: center; justify-content: center;">
+                        <i class="bi bi-x" style="color: white; font-size: 28px;"></i>
+                    </button>
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav ms-auto">
