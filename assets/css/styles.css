@@ -11,6 +11,11 @@ body {
   overflow-y: auto;
   position: relative;
 }
+a {
+  color: #f9f9f9;
+  text-decoration: none;
+}
+
 
 /* Navbar base styling */
 .navbar {
@@ -103,55 +108,55 @@ body {
 
 /* About PAge */
 .banner2-section.about {
-  background: url("/assets/new-images/about/about-bg.png") center/cover
+  background: url("/assets/new-images/home/banner-img.png") center/cover
     no-repeat;
 }
 
 /* Services PAge */
 .banner2-section.services {
-  background: url("/assets/new-images/services/services-bg.png") center/cover
+  background: url("/assets/new-images/home/banner-img.png") center/cover
     no-repeat;
 }
 
 /* Portfolio PAge */
 .banner2-section.portfolio {
-  background: url("/assets/new-images/portfolio/portfolio-bg.png") center/cover
+  background: url("/assets/new-images/home/banner-img.png") center/cover
     no-repeat;
 }
 
 /* Request A Quote PAge */
 .banner2-section.quote {
-  background: url("/assets/new-images/requestquote/contact-bg.png") center/cover
+  background: url("/assets/new-images/home/banner-img.png") center/cover
     no-repeat;
 }
 
 /* Service 1 PAge */
 .banner2-section.service1 {
-  background: url("/assets/new-images/services/service1-bg.png") center/cover
+  background: url("/assets/new-images/home/banner-img.png") center/cover
     no-repeat;
 }
 
 /* Service 2 PAge */
 .banner2-section.service2 {
-    background: url("/assets/new-images/services/service2-bg.png") center/cover
+    background: url("/assets/new-images/home/banner-img.png") center/cover
       no-repeat;
   }
 
 /* Service 3 PAge */
 .banner2-section.service3 {
-    background: url("/assets/new-images/services/service3-bg.png") center/cover
+    background: url("/assets/new-images/home/banner-img.png") center/cover
       no-repeat;
   }
 
 /* Service 4 PAge */
 .banner2-section.service4 {
-    background: url("/assets/new-images/services/service4-bg.png") center/cover
+    background: url("/assets/new-images/home/banner-img.png") center/cover
       no-repeat;
   }
 
 /* Service 5 PAge */
 .banner2-section.service5 {
-    background: url("/assets/new-images/services/service5-bg.png") center/cover
+    background: url("/assets/new-images/home/banner-img.png") center/cover
       no-repeat;
   }
 
