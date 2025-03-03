@@ -1,179 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
-    <link rel="icon" href="assets/1_c.png" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link rel="icon" href="assets/1_c.png" type="image/x-icon" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+  </head>
 
-<body>
-
+  <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <!-- Logo -->
-            <a class="navbar-brand" href="/index.html">
-                <img src="./assets/new-images/white-logo-s-s.png" alt="Logo" />
-            </a>
-            <!-- Toggle Button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
-                <!-- <span class="navbar-toggler-icon"></span> -->
-                <i class="bi bi-list text-white fs-2"></i>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="/index.html">
+          <img src="./assets/new-images/white-logo-s-s.png" alt="Logo" />
+        </a>
+        <!-- Toggle Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+        >
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <i class="bi bi-list text-white fs-2"></i>
+        </button>
+        <!-- Offcanvas Menu -->
+        <div class="offcanvas offcanvas-end" id="offcanvasNavbar">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Menu</h5>
+            <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button> -->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+              style="
+                width: 40px;
+                height: 40px;
+                background: transparent;
+                border: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <i class="bi bi-x" style="color: white; font-size: 28px"></i>
             </button>
-            <!-- Offcanvas Menu -->
-            <div class="offcanvas offcanvas-end" id="offcanvasNavbar">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title">Menu</h5>
-                    <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button> -->
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" style="width: 40px; height: 40px; background: transparent; border: none; display: flex; align-items: center; justify-content: center;">
-                        <i class="bi bi-x" style="color: white; font-size: 28px;"></i>
-                    </button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="/index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="/aboutus.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="/Services.html">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="/Portfolio.html">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="btn btn-outline-dark ms-3" href="/Quote.html">Request a Quote</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="/aboutus.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="/Services.html"
+                  >Services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="/Portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-outline-dark ms-3" href="/Quote.html"
+                  >Request a Quote</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </nav>
 
     <main>
-        <!-- Banner -->
-        <section class="banner2-section about d-flex align-items-center text-center text-white">
-            <div class="container">
-                <h1 class="banner-heading">About Us</h1>
-            </div>
-        </section>
-
-        <section class="about-section">
-            <div class="container">
-                <!-- First Section -->
-                <div class="row align-items-center about-content">
-                    <div class="col-md-6 col-12 about-text">
-                        <h2>Elevate Your Home’s Appeal with Stage & Style</h2>
-                        <p>
-                            At Stage and Style, we believe that every space tells a story. Founded by Noor, an expert interior designer with a passion for color and creativity, we focus on bringing fresh and dynamic energy into every project.
-                        </p>
-                        <p>
-                            Noor has years of experience transforming Airbnb properties, residential homes, and commercial spaces into breathtaking environments that captivate guests and owners alike.
-                        </p>
-                        <p>
-                            Unlike other staging companies that stick to neutral tones, we specialize in color-infused designs that create memorable experiences. From curated furniture to personalized decor elements, we ensure every space is warm, welcoming, and uniquely yours.
-                        </p>
-                        <p>
-                            Let’s collaborate to make your vision a reality.
-                        </p>
-                    </div>
-                    <div class="col-md-6 col-12 about-img">
-                        <img src="/assets/new-images/about/about-1.png" alt="About Us">
-                    </div>
-                </div>
-        
-                <!-- Second Section -->
-                <div class="row align-items-center about-content mt-5">
-                    <div class="col-md-6 col-12 about-img">
-                        <img src="/assets/new-images/about/about-2.png" alt="Founder Noor">
-                    </div>
-                    <div class="col-md-6 col-12 about-text">
-                        <h2>Meet Noor – Founder & CEO of Stage and Style</h2>
-                        <p>
-                            I’m Noor, the proud founder of Stage and Style, where we blend beauty, functionality, and style to transform spaces that leave a lasting impression.
-                        </p>
-                        <p>
-                            Whether you’re selling a home, hosting Airbnb guests, or redesigning your space, our expert touch ensures it stands out with elegance and purpose.
-                        </p>
-                        <p>
-                            My vision for Stage and Style has led to remarkable transformations across the Niagara Region, helping homeowners and investors maximize their property's potential.
-                        </p>
-                        <p>
-                            With every project, we bring spaces to life—because a well-designed home isn't just seen, it's felt.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </main>
-    
-    <footer class="footer text-white py-4" style="background: #231310">
+      <!-- Banner -->
+      <section
+        class="banner2-section about d-flex align-items-center text-center text-white"
+      >
         <div class="container">
-            <div class="row align-items-center pb-4 border-bottom">
-                <!-- Left Side - Contact Info -->
-                <div class="col-lg-5 col-md-6 text-start mb-4 mb-md-0">
-                    <h5 class="fw-bold">Contact Us</h5>
-                    <p class="d-flex align-items-center fs-lg">
-                        <i class="bi bi-geo-alt fs-5 me-2"></i> 4635 Queen St Niagara Falls, ON L2E 2L7, Canada
-                    </p>
-                    <p class="d-flex align-items-center fs-lg">
-                        <i class="bi bi-envelope fs-5 me-2"></i> stageandstyle08@gmail.com
-                    </p>
-                    <p class="d-flex align-items-center fs-lg">
-                        <i class="bi bi-telephone fs-5 me-2"></i>+1 365-476-8787
-                    </p>
-                </div>
-    
-                <!-- Vertical Line (Hidden on Small Screens) -->
-                <div class="col-lg-1 d-none d-lg-block">
-                    <div class="border-end" style="height: 100%"></div>
-                </div>
-    
-                <!-- Right Side - Logo & Social Media -->
-                <div class="col-lg-6 col-md-6 text-md-start text-center">
-                    <img src="./assets/new-images/white-logo-s-s.png" alt="Logo" class="footer-logo mb-3" />
-                    <div class="d-flex justify-content-md-start justify-content-center gap-3">
-                        <a href="https://www.facebook.com/profile.php?id=61565645172649&mibextid=JRoKGi" class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center social-icon">
-                            <i class="bi bi-facebook"></i>
-                        </a>
-                        <a href="https://wa.me/13654768787" class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center social-icon">
-                            <i class="bi bi-whatsapp"></i>
-                        </a>
-                        <a href="https://www.instagram.com/stageandstyle__/profilecard/?igsh=MXJyNTY0cGJpaTF3bA==" class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center social-icon">
-                            <i class="bi bi-instagram"></i>
-                        </a>
-                        <!-- <a href="#" class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center social-icon">
+          <h1 class="banner-heading">About Us</h1>
+        </div>
+      </section>
+
+      <section class="about-section">
+        <div class="container">
+          <!-- First Section -->
+          <div class="row align-items-center about-content">
+            <div class="col-md-6 col-12 about-text">
+              <h2>Elevate Your Home’s Appeal with Stage & Style</h2>
+              <p>
+                At Stage and Style, we believe that every space tells a story.
+                Founded by Noor, an expert interior designer with a passion for
+                color and creativity, we focus on bringing fresh and dynamic
+                energy into every project.
+              </p>
+              <p>
+                Noor has years of experience transforming Airbnb properties,
+                residential homes, and commercial spaces into breathtaking
+                environments that captivate guests and owners alike.
+              </p>
+              <p>
+                Unlike other staging companies that stick to neutral tones, we
+                specialize in color-infused designs that create memorable
+                experiences. From curated furniture to personalized decor
+                elements, we ensure every space is warm, welcoming, and uniquely
+                yours.
+              </p>
+              <p>Let’s collaborate to make your vision a reality.</p>
+            </div>
+            <div class="col-md-6 col-12 about-img">
+              <img src="/assets/new-images/about/about-1.png" alt="About Us" />
+            </div>
+          </div>
+
+          <!-- Second Section -->
+          <div class="row align-items-center about-content mt-5">
+            <div class="col-md-6 col-12 about-img">
+              <img
+                src="/assets/new-images/about/about-2.png"
+                alt="Founder Noor"
+              />
+            </div>
+            <div class="col-md-6 col-12 about-text">
+              <h2>Meet Noor – Founder & CEO of Stage and Style</h2>
+              <p>
+                I’m Noor, the proud founder of Stage and Style, where we blend
+                beauty, functionality, and style to transform spaces that leave
+                a lasting impression.
+              </p>
+              <p>
+                Whether you’re selling a home, hosting Airbnb guests, or
+                redesigning your space, our expert touch ensures it stands out
+                with elegance and purpose.
+              </p>
+              <p>
+                My vision for Stage and Style has led to remarkable
+                transformations across the Niagara Region, helping homeowners
+                and investors maximize their property's potential.
+              </p>
+              <p>
+                With every project, we bring spaces to life—because a
+                well-designed home isn't just seen, it's felt.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer text-white py-4" style="background: #231310">
+      <div class="container">
+        <div class="row align-items-center pb-4 border-bottom">
+          <!-- Left Side - Contact Info -->
+          <div class="col-lg-5 col-md-6 text-start mb-4 mb-md-0">
+            <h5 class="fw-bold">Contact Us</h5>
+            <p class="d-flex align-items-center fs-lg">
+              <i class="bi bi-geo-alt fs-5 me-2"></i> 4635 Queen St Niagara
+              Falls, ON L2E 2L7, Canada
+            </p>
+            <p class="d-flex align-items-center fs-lg">
+              <i class="bi bi-envelope fs-5 me-2"></i> stageandstyle08@gmail.com
+            </p>
+            <p class="d-flex align-items-center fs-lg">
+              <i class="bi bi-telephone fs-5 me-2"></i>+1 365-476-8787
+            </p>
+          </div>
+
+          <!-- Vertical Line (Hidden on Small Screens) -->
+          <div class="col-lg-1 d-none d-lg-block">
+            <div class="border-end" style="height: 100%"></div>
+          </div>
+
+          <!-- Right Side - Logo & Social Media -->
+          <div class="col-lg-6 col-md-6 text-md-start text-center">
+            <img
+              src="./assets/new-images/white-logo-s-s.png"
+              alt="Logo"
+              class="footer-logo mb-3"
+            />
+            <div
+              class="d-flex justify-content-md-start justify-content-center gap-3"
+            >
+              <a
+                href="https://www.facebook.com/profile.php?id=61565645172649&mibextid=JRoKGi"
+                class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center social-icon"
+              >
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a
+                href="https://wa.me/13654768787"
+                class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center social-icon"
+              >
+                <i class="bi bi-whatsapp"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/stageandstyle__/profilecard/?igsh=MXJyNTY0cGJpaTF3bA=="
+                class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center social-icon"
+              >
+                <i class="bi bi-instagram"></i>
+              </a>
+              <!-- <a href="#" class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center social-icon">
                             <i class="bi bi-linkedin"></i>
                         </a> -->
-                    </div>
-                </div>
             </div>
-    
-            <!-- Bottom Copyright Section -->
-            <div class="text-md-start text-center mt-3">
-                <p class="mb-0 fs-lg">
-                    &copy; <span id="year">2025</span> Stage and Style. All rights reserved.
-                </p>
-            </div>
+          </div>
         </div>
+
+        <!-- Bottom Copyright Section -->
+        <div class="text-md-start text-center mt-3">
+          <p class="mb-0 fs-lg">
+            &copy; <span id="year">2025</span> Stage and Style. All rights
+            reserved.
+          </p>
+        </div>
+      </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -181,16 +258,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="./assets/js/script.js"></script>
 
-
     <script>
-        const toggle = document.getElementById('navbar-toggle');
-        const menu = document.getElementById('navbar-menu');
+      const toggle = document.getElementById("navbar-toggle");
+      const menu = document.getElementById("navbar-menu");
 
-        toggle.addEventListener('click', () => {
-            menu.classList.toggle('active');
-        });
+      toggle.addEventListener("click", () => {
+        menu.classList.toggle("active");
+      });
     </script>
-
-</body>
-
+  </body>
 </html>
